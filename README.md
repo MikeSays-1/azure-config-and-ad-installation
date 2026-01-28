@@ -31,25 +31,11 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-<table style="border:none;">
-<tr>
-<td>
-
-
-<ul>
-  <li>Setup Domain Controller in Azure</li>
-  <li>Setup Client-1 in Azure</li>
-  <li>Install Active Directory</li>
-</ul>
-
-</td>
-<td>
-
 <img src="https://github.com/user-attachments/assets/b8f73a9e-908c-4303-a79f-e416481b2ef5" width="50%">
 
-</td>
-</tr>
-</table>
+- Setup Domain Controller in Azure 
+- Setup Client-1 in Azure 
+- Install Active Directory
 
 <h2>Deployment and Configuration Steps</h2>
 
