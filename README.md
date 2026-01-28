@@ -73,11 +73,14 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 </p>
   
 <p>
-  Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials" > On the left pane, in drop down "Settings" select "IP Configurations" > Select "ipconfig1" and set Private IP Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
+Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials" > On the left pane, in drop down "Settings" select "IP Configurations" > Select "ipconfig1" and set Private IP Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
 </p>
-
+<details>
+<summary><i>See screenshots</i></summary>
+<p>
 <img width="457" height="314" alt="image" src="https://github.com/user-attachments/assets/1fca2cfd-3d12-4034-97fa-71a051ec2c92" />
-
+</details>
+</p>
 <p>
 On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your Domain Controller will now boot. Once booted, open "Windows Defender Firewall with Advanced Security", go to "Windows Defender Firewall Properties", and for Firewall State: Select "Off" for Domain, Public and Private Profiles and select Apply. (We will be testing connectivity.) Leave your RDP connection on, we will return in Step 5.
 </p>
@@ -128,7 +131,8 @@ On your local computer (Windows or macOS), open a Remote Desktop client and conn
 <p><b>5. INSTALL ACTIVE DIRECTORY</b> <br />
 Return to our Domain Controller from Step 3. View or Open "Server Manager > Dashboard". Select option 2. Add roles and features. Select "Next" 3 times, until we arrive at "Server Roles". Here select "Active Directory Domain Services". Select "Next" 3 times again. On the Confirmation screen, mark the checkbox "Restart the destination server automatically..." , and select "Install"</p>
 <details>
-<summary><i>See screenshots</i></summary><p>
+<summary><i>See screenshots</i></summary>
+<p>
 <img width="1036" height="742" alt="image" src="https://github.com/user-attachments/assets/5a75b044-f685-4b0d-8889-407f8d570002" />
 </p>
 </details>  
@@ -145,7 +149,8 @@ Once feature is finsihed installing, select "Close". On your Server Manager Dash
 From here, select "Promote this server to a domain controller". In the Domain Configuration screen, select "Add a new forest" and in Root domain name field, type "mydomain.com".  (you may name the forest anything) Select "Next", in the Domain Controller Options, you will need to set the DSRM Password here. Select "Next" 5 more times from here, and lastly "Install". The VM will install the new forest and will sign out automatically.
 </p>
 <details>
-<summary><i>See screenshots</i></summary><p>
+<summary><i>See screenshots</i></summary>
+<p>
 <img width="1409" height="729" alt="image" src="https://github.com/user-attachments/assets/bfd708ee-f4e3-407a-9495-39a7ae186fdc" />
 </p>
 </details>  
