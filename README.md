@@ -51,7 +51,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <details>
-<summary>See screenshots</summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
 </p>
@@ -66,7 +66,7 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 </p>
 
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="1035" height="871" alt="image" src="https://github.com/user-attachments/assets/580cc793-f5d1-430b-ae61-cdc3f62327a9" />
 </p>
@@ -74,7 +74,7 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 <p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". 
 
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <img width="1044" height="882" alt="image" src="https://github.com/user-attachments/assets/93e8e7c1-6186-4197-816c-10d1f5bd3b17" />
 </details>
   
@@ -90,7 +90,7 @@ On your local computer (Windows or macOS), open a Remote Desktop client and conn
 In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1".  For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >".
 </p>
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="1032" height="902" alt="image" src="https://github.com/user-attachments/assets/1e7e49ce-9120-47d0-96ec-1cce40f3ad46" />
 </p>
@@ -104,7 +104,7 @@ Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Netw
 </p>
 
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="1028" height="855" alt="image" src="https://github.com/user-attachments/assets/fe93bdb0-a714-4340-bad2-851b9e89cc13" />
 </p>
@@ -112,14 +112,14 @@ Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Netw
 
 <p>Restart "vm-client-1" within the Azure Portal by going to your vm list.  Mark the checkbox for "vm-client-1" and select "Restart" near the top.While on this screen, copy/note "vm-client'1" Public IP Address, we'll need it to Login. <br />
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="1871" height="611" alt="image" src="https://github.com/user-attachments/assets/af75ecec-8450-42a2-8a2e-536b5e7bc0d8" />
 </p>
 </details> 
 On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your VM Client 1 will now boot. Open PowerShell and attempt to ping your Domain Controller's Private IP Address. Ensure the ping the succeded, run ipconfig /all. The output for DNS Settings should now show "vm-dc-1"'s Private IP Address.</p>
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 <img width="620" height="681" alt="image" src="https://github.com/user-attachments/assets/b6248308-69b8-4524-a9c3-685712314250" />
 </p>
@@ -132,7 +132,7 @@ Login to vm-dc-1
 </p>
 
 <details>
-<summary><b>See screenshots</b></summary>
+<summary><i>See screenshots</i></summary>
 <p>
 Image Here
 </p>
