@@ -127,14 +127,11 @@ On your local computer (Windows or macOS), open a Remote Desktop client and conn
  
 
 <br />
-<p><b>5. INSTALL ACTIVE DIRECTORY </b> <br />
-Login to vm-dc-1
-</p>
-
+<p><b>5. INSTALL ACTIVE DIRECTORY</b> <br />
+Return to our Domain Controller from Step 3. View or Open "Server Manager > Dashboard". Select option 2. Add roles and features. Select "Next" 3 times, until we arrive at "Server Roles". Here select "Active Directory Domain Services". Select "Next" 3 times again. On the Confirmation screen, mark the checkbox "Restart the destination server automatically..." , and select "Install"</p>
 <details>
-<summary><i>See screenshots</i></summary>
-<p>
-Image Here
+<summary><i>See screenshots</i></summary><p>
+<img width="1036" height="742" alt="image" src="https://github.com/user-attachments/assets/5a75b044-f685-4b0d-8889-407f8d570002" />
 </p>
 </details>  
 
