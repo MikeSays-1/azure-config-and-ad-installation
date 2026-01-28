@@ -59,40 +59,50 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p><b>2. CREATE VIRTUAL NETWORK. </b> 
-<br />In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
+<p><b>3. CREATE VM CLIENT 1 </b> 
+In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1".  For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >".
 </p>
+<details>
+<summary><b>See screenshots</b></summary>
+<p>
+<img width="1032" height="902" alt="image" src="https://github.com/user-attachments/assets/1e7e49ce-9120-47d0-96ec-1cce40f3ad46" />
+</p>
+</details>  
+<br />
+<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking, now select "Review + Create" and finally "Create". </p>
+
 
 <details>
 <summary><b>See screenshots</b></summary>
 <p>
-<img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
+Image Here
+
 </p>
 </details>  
 
 <br />
 
-<p><b>2. CREATE VIRTUAL NETWORK. </b> 
-<br />In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
+<p><b>TITLE HERE</b> 
+<br />TEXT Here
 </p>
 
 <details>
 <summary><b>See screenshots</b></summary>
 <p>
-<img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
+Image Here
 </p>
 </details>  
 
 <br />
 
-<p><b>2. CREATE VIRTUAL NETWORK. </b> 
-<br />In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
+<p><b>TItle Here </b> 
+<br />Txt Here
 </p>
 
 <details>
 <summary><b>See screenshots</b></summary>
 <p>
-<img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
+Image Here
 </p>
 </details>  
 
