@@ -59,7 +59,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p><b>3. CREATE VM CLIENT 1 </b> 
+<p><b>3. CREATE VM CLIENT 1 </b> <br />
 In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1".  For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >".
 </p>
 <details>
@@ -82,8 +82,8 @@ Image Here
 
 <br />
 
-<p><b>TITLE HERE</b> 
-<br />TEXT Here
+<p><b>TITLE HERE</b> <br />
+TEXT Here
 </p>
 
 <details>
@@ -95,8 +95,8 @@ Image Here
 
 <br />
 
-<p><b>TItle Here </b> 
-<br />Txt Here
+<p><b>TItle Here </b> <br />
+Txt Here
 </p>
 
 <details>
