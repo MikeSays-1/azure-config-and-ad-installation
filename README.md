@@ -31,14 +31,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
+Log into Azure Portal, and in the search bar type "Resource Groups", select Resource Groups and press "+ Create" to create a resouce group. Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create".
+<br />
+</p>
+
+<p>
 <img width="1126" height="788" alt="image" src="https://github.com/user-attachments/assets/f3d3aa89-cc91-4b4b-aca9-9935a52704d6" />
 <img width="1127" height="599" alt="image" src="https://github.com/user-attachments/assets/0ba247ce-8e26-472a-aeda-0a1985f1ab6e" />
-
-
 </p>
-<p>
-Log into Azure Portal, and in the search bar type "Resource Groups", select and click "+ Create". Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create"
-</p>
+
 <br />
 
 <p>
