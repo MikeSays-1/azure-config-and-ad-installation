@@ -78,7 +78,7 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 <img width="1044" height="882" alt="image" src="https://github.com/user-attachments/assets/93e8e7c1-6186-4197-816c-10d1f5bd3b17" />
 </details>
   
-<br />Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" and set Private IP Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
+<br />Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials" > On the left pane, in drop down "Settings" select "IP Configurations" > Select "ipconfig1" and set Private IP Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
 <br />
 
 <img width="457" height="314" alt="image" src="https://github.com/user-attachments/assets/1fca2cfd-3d12-4034-97fa-71a051ec2c92" />
@@ -100,12 +100,31 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 
 <br /><br />
 
-Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > Select "Network Settings" on the left pane > Select your Network Interface Card
-
+Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials" > On the left pane, in drop down "Settings" select "DNS Servers".  Under DNS Servers, select "custom", here in the blank field paste the "vm-dc-1" Private IP Address, select "Save" near the top.
 </p>
 
+<details>
+<summary><b>See screenshots</b></summary>
+<p>
+<img width="1028" height="855" alt="image" src="https://github.com/user-attachments/assets/fe93bdb0-a714-4340-bad2-851b9e89cc13" />
+</p>
+</details>  
 
-
+<p>Restart "vm-client-1" within the Azure Portal by going to your vm list.  Mark the checkbox for "vm-client-1" and select "Restart" near the top.While on this screen, copy/note "vm-client'1" Public IP Address, we'll need it to Login. <br />
+<details>
+<summary><b>See screenshots</b></summary>
+<p>
+<img width="1871" height="611" alt="image" src="https://github.com/user-attachments/assets/af75ecec-8450-42a2-8a2e-536b5e7bc0d8" />
+</p>
+</details> 
+On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your VM Client 1 will now boot. Open PowerShell and attempt to ping your Domain Controller's Private IP Address. Ensure the ping the succeded, run ipconfig /all. The output for DNS Settings should now show "vm-dc-1"'s Private IP Address.</p>
+<details>
+<summary><b>See screenshots</b></summary>
+<p>
+<img width="620" height="681" alt="image" src="https://github.com/user-attachments/assets/b6248308-69b8-4524-a9c3-685712314250" />
+</p>
+</details> 
+ 
 
 <br />
 <p><b>5. INSTALL ACTIVE DIRECTORY </b> <br />
