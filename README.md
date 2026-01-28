@@ -83,7 +83,7 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 
 <img width="457" height="314" alt="image" src="https://github.com/user-attachments/assets/1fca2cfd-3d12-4034-97fa-71a051ec2c92" />
 
-On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your Domain Controller will now boot. Once booted, open "Windows Defender Firewall with Advanced Security", go to "Windows Defender Firewall Properties", and for Firewall State: Select "Off" for Domain, Public and Private Profiles and select Apply. (We will be testing connectivity.)
+On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your Domain Controller will now boot. Once booted, open "Windows Defender Firewall with Advanced Security", go to "Windows Defender Firewall Properties", and for Firewall State: Select "Off" for Domain, Public and Private Profiles and select Apply. (We will be testing connectivity.) Leave your RDP connection on, we will return in Step 5.
 </p>
 
 <p><b>4. CREATE VM CLIENT 1. </b> <br />
@@ -96,20 +96,19 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 </p>
 </details>  
 <br />
-<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking, now select "Review + Create" and finally "Create". </p>
-
-
-<details>
-<summary><b>See screenshots</b></summary>
-<p>
-Image Here
-
-</p>
-</details>  
+<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking, now select "Review + Create" and finally "Create". 
 
 <br />
-<p><b>TItle Here </b> <br />
-Txt Here
+Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > Select "Network Settings" on the left pane > Select your Network Interface Card <img width="507" height="89" alt="image" src="https://github.com/user-attachments/assets/9dbffada-3501-4542-bdf9-65dbad60211c" />
+
+</p>
+
+
+
+
+<br />
+<p><b>5. INSTALL ACTIVE DIRECTORY </b> <br />
+Login to vm-dc-1
 </p>
 
 <details>
