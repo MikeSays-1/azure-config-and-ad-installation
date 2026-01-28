@@ -24,18 +24,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1. Setup Domain Controller in Azure
+- Step 2. Setup Client-1 in Azure
+- Step 3. Install Active Directory
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1126" height="788" alt="image" src="https://github.com/user-attachments/assets/f3d3aa89-cc91-4b4b-aca9-9935a52704d6" />
+<img width="1127" height="599" alt="image" src="https://github.com/user-attachments/assets/0ba247ce-8e26-472a-aeda-0a1985f1ab6e" />
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into Azure Portal, and in the search bar type "Resource Groups", select and click "+ Create". Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create"
 </p>
 <br />
 
