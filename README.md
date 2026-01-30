@@ -93,7 +93,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 
 <details><summary>See screenshots</summary>
 
-<img src="images/step 4a.JPG" width="60%">
+<img src="images/Step 4a.JPG" width="60%"> 
 </details> 
 
 <p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab". for Subnet, select default. We're finished with Networking, now select "Review + Create" and finally "Create". Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials" > On the left pane, in drop down "Settings" select "DNS Servers". Under DNS Servers, select "custom", here in the blank field paste the "vm-dc-1" Private IP Address, select "Save" near the top. 
